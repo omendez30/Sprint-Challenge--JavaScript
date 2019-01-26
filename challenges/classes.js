@@ -56,5 +56,3 @@ class CubeMaker extends CuboidMaker2 {
     cb(this.length, this.width, this.height, surfaceAre);
   }
 }
-console.log(CubeMaker(3, 5, 6, volume()));
-console.log(cubeSurfaceArea(3, 5, 6, surfaceAre()));
