@@ -17,14 +17,14 @@ function consume(args1, args2, cb) {
  */
 
 function add(num1, num2) {
-  console.log(num1 + num2);
+  return num1 + num2;
 }
 
 function multiply(num1, num2) {
-  console.log(num1 * num2);
+  return num1 * num2;
 }
 function greeting(first, last) {
-  console.log(`Hello ${first} ${last}, nice to meet you!`);
+  return `Hello ${first} ${last}, nice to meet you!`;
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */

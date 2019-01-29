@@ -146,10 +146,10 @@ let contactInfo = [];
 for (let i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes("Uni")) {
     contactInfo.push(`${graduates[i].first_name} ${graduates[i].email} `);
-    console.log(contactInfo);
+    // console.log(contactInfo);
   }
 }
-//console.log(contactInfo);
+console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 
@@ -227,12 +227,12 @@ The zoo wants to display both the scientific name and the animal name in front o
 */
 let animalNames = [];
 
-animalNames = zooAnimals.forEach(function(elements) {
-  console.log(
+zooAnimals.forEach(function(elements) {
+  return animalNames.push(
     `Name: ${elements.animal_name} Scientific Name: ${elements.scientific_name}`
   );
 });
-
+console.log(animalNames);
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
@@ -241,7 +241,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 let lowerCase = [];
 lowerCase = zooAnimals.map(function(element) {
-  return `${element.animal_name.toUpperCase()}`;
+  return `${element.animal_name.toLowerCase()}`;
 });
 console.log(lowerCase);
 
